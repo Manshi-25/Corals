@@ -45,7 +45,8 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1>Coral Reef Health Detection</h1>
+        <h1 >Coral Reef Health Detection</h1>
+        <button className="contact-button">Contact Us</button>
       </header>
 
       <main className="main-content">
@@ -69,14 +70,15 @@ function App() {
         
         <div className="App">
               <ImageUploader />
-              </div>
+        </div>
           
         
 
         <section className="details-section">
-          <h1>Protecting Coral Reefs With Technology</h1>
+          <h1 style={{textAlign: 'center', marginBottom: '35px', fontSize:'1.8rem ', marginTop:'5rem'}}>Protecting Coral Reefs With Technology</h1>
           <div className="details-content">
-            <div className="image-container">
+
+            <div className="image-container" style={{marginLeft:'40px'}}>
               <img src={coralReefImage} alt="Coral Reef" className="coral-image" />
             </div>
             <div className="text-container">
@@ -88,18 +90,22 @@ function App() {
               <p>
                 The analysis may include identifying signs of coral bleaching, disease, or damage. The goal is to provide a simple and accessible tool
                 for anyone interested in coral reef conservation.
-              </p>
-              <h3>Our Technology</h3>
-              <h5>Global Reef Monitoring:</h5>
+              </p> 
+              </div>
+              </div>
+
+              <div className="technology">
+              <h3 style={{fontSize:'1.5rem'}}>Our Technology</h3>
+              <h5 style={{fontSize:'1rem'}}>Global Reef Monitoring:</h5>
               <p>
                 Track coral reef health across the globe with our comprehensive database of reef ecosystems and historical health trends.
               </p>
-              <h5>Conservation Insights:</h5>
+              <h5 style={{fontSize:'1rem'}}>Conservation Insights:</h5>
               <p>
                 Gain actionable insights for coral reef conservation efforts with detailed reports and recommendations based on analysis results.
               </p>
             </div>
-          </div>
+          
         </section>
       </main>
 
